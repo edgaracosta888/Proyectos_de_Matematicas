@@ -18,16 +18,28 @@ Aquí se irán incorporando códigos de distintas áreas, por ejemplo:
 	- Si el número es impar, se calcula $3n + 1$.
 	El proceso continúa hasta llegar a 1, mostrando la secuencia y el número de pasos.
 
-### 2. Próximos proyectos
-- Números primos
+### 2. Números primos
+- **Carpeta:** `Numeros_Primos/`
+- **Archivo principal:** `Proyecto_Primos.ipynb`
+- **Descripción breve:**
+	Este módulo desarrolla utilidades para análisis de números primos con enfoque en validación y reutilización. La función base es `Prime()`, que verifica si un valor es primo tras validar la entrada y comprobar divisibilidad en el rango $[2, \sqrt{n}]$: si encuentra divisor retorna `False`, y si no, `True`.
+	
+	Funciones incluidas:
+	- `List_Prime_numbers(m, n)`: lista los números primos dentro del intervalo `[m, n]`.
+	- `Next_Prime(n)`: obtiene el primo inmediatamente posterior a `n`.
+	- `Previous_Prime(n)`: obtiene el primo inmediatamente anterior a `n`.
+	- `Previous_Next_Prime(n)`: devuelve en una tupla el primo anterior y el siguiente de `n`.
+	- `First_Prime_Numbers(n)`: genera los primeros `n` números primos.
 
 ## Estructura
 
 ```text
 Proyectos_de_Matematicas/
 ├── README.md
-└── Collatz/
-    └── Conjetura_Collatz.ipynb
+├── Collatz/
+│   └── Conjetura_Collatz.ipynb
+└── Numeros_Primos/
+    └── Proyecto_Primos.ipynb
 ```
 
 > La estructura irá creciendo a medida que se agreguen nuevas carpetas y notebooks.
