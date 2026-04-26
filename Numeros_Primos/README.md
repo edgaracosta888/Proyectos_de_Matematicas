@@ -62,9 +62,11 @@ El notebook incluye un bloque que genera el archivo `primos.csv` iterando en ven
 
 ## Notebook 2 — Aplicaciones y exploración
 
-`Aplicaciones.ipynb` contiene pruebas de comportamiento de los primos bajo distintas transformaciones. La primera exploración los proyecta sobre la circunferencia unitaria.
+`Aplicaciones.ipynb` contiene pruebas de comportamiento de los primos bajo distintas transformaciones. 
 
-### El mapeo
+### 1. Primos sobre la circunferencia unitaria.
+
+#### El mapeo
 
 Cada primo $p$ se proyecta al círculo mediante:
 
@@ -74,7 +76,7 @@ lo que produce un ángulo en $[0, \pi)$. A partir de este ángulo se calculan la
 
 $$x_p = \cos(\theta_p), \qquad y_p = \sin(\theta_p), \qquad A_p = \frac{x_p \cdot y_p}{2}$$
 
-### Campos derivados
+#### Campos derivados
 
 | Campo | Fórmula | Interpretación |
 |-------|---------|----------------|
@@ -83,7 +85,7 @@ $$x_p = \cos(\theta_p), \qquad y_p = \sin(\theta_p), \qquad A_p = \frac{x_p \cdo
 | `sin` | $\sin(\text{rest})$ | Coordenada vertical sobre el círculo unitario |
 | `area` | $\frac{\cos \cdot \sin}{2}$ | Área del triángulo (origen, proyección, eje $x$) |
 
-### Visualización: Primo vs Área
+#### Visualización: Primo vs Área
 
 El scatter plot de $p$ contra $A_p$ revela bandas de densidad que no son aleatorias — la distribución de áreas para los primos no es uniforme, lo que sugiere que la posición angular de los primos respecto a $\pi$ tiene estructura interna.
 
@@ -97,6 +99,12 @@ El scatter plot de $p$ contra $A_p$ revela bandas de densidad que no son aleator
      └──────────────────────────────────────────────────────→ Primo (p)
 ```
 
+###  2. Factorial Pirmo
+Se define una función que calcula el factorial primo definido como el factorial de un número dejando en su producto, únicamente los números primos anteriores al número a calcularle el factorial.
+
+ #### Visualización
+
+Muestra el scatrer plot del logaritmo (para reducir la escala y poder visualizar el comportamiento) del factorial primo de los números del 1 al 200. 
 ---
 
 ## Líneas de investigación
